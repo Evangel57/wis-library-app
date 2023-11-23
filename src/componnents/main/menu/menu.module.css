@@ -1,0 +1,19 @@
+.menu {
+    min-width: 500px;
+    margin: 10px;
+}
+
+.menuItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    letter-spacing: .1rem;
+
+}
+
+.menuDivider {
+    height: 3px; /* add the desired height */
+    width: 100%; /* add the desired width */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}

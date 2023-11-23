@@ -1,0 +1,22 @@
+
+:root { 
+
+    --clr-1: #201F1F; 
+    --clr-2: #ffffffcb; 
+    --clr-3: #050403; 
+
+    --color-text: var(--clr-2);
+    --color-search: var(--clr-1);
+    --color-chat: var(--clr-1);
+
+    --max-w-sect: 1100px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--clr-3);
+    color: var(--clr-2);
+
+}
+

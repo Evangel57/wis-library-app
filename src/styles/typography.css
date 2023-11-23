@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root { 
+    /* --ff: 'Inknut Antiqua';  */
+
+    --fs-subtitle: 12px; 
+    --fs-title-b: 36px; 
+    --fs-title-s: 24px; 
+    --fs-user-name: 20px; 
+
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--fs-subtitle);
+}

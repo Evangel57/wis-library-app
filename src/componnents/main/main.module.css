@@ -1,0 +1,66 @@
+.imgContainer {
+    position: relative;
+    z-index: 2;
+
+    height: 100vh; /* устанавливаем высоту контейнера равной высоте экрана */
+    width: 100%; /* устанавливаем высоту контейнера равной высоте экрана */
+    overflow: hidden; /* скрываем все, что не помещается в контейнер */
+} 
+.img {
+    position: absolute;
+    top: 50%; /* размещаем изображение по вертикали посередине */
+    left: 50%; /* размещаем изображение по горизонтали посередине */
+    transform: translate(-50%, -50%); /* центрируем изображение относительно контейнера */
+    max-height: 130%; /* устанавливаем максимальную высоту изображения равной высоте контейнера */
+    min-height: 600px;
+    height: max(130%, 600px);
+
+}
+.sectionContainer {
+    max-width: var(--max-w-sect);
+    margin: auto;
+    padding: 70px 20px;
+    z-index: 4;
+    position: relative;
+
+}
+.infoContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.separator {
+    height: 114px;
+    background-color: rgb(255, 255, 255);
+    width: 3px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* .mainSection {
+
+} */
+
+.dopContainer {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+@media (max-width: 1000px) {
+    .infoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .separator {
+        display: none;  /* Исчезает на меньших экранах */
+    }
+    .dopContainer {
+        flex-direction: column;
+    }
+
+}
